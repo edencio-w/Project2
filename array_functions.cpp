@@ -22,13 +22,18 @@ using namespace std;
 
 //TODO add a global array of entry structs (global to this file)
 
+struct myStruct{
+	std::string word;
+	int wordCount;
+};
+string wordArray[2000];
 //TODO add variable to keep track of next available slot in array
-
+int nextEmpty;
 //TODO define all functions in header file
 
 //zero out array that tracks words and their occurrences
 void clearArray(){
-
+	nextEmpty = 0;
 }
 
 //how many unique words are in array
